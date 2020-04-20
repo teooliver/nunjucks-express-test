@@ -1,0 +1,76 @@
+.RoomCard {
+  margin: 1rem 0;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+  height: 200px;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left {
+    height: inherit;
+    margin-right: 1rem;
+  }
+
+  .right {
+    margin: 0 1rem;
+    flex-grow: 2;
+  }
+
+  .price {
+    // color: $c-text-black;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+
+    font-weight: bold;
+  }
+
+  .color-choices {
+    h3 {
+      // color: $c-text-black;
+      margin: 1rem 0;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    .text {
+      margin-right: 1rem;
+      .wall-area {
+        // color: $c-text-black;
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+      .color-name {
+        // color: $c-text-black;
+        font-size: 0.8rem;
+      }
+    }
+    .colors {
+      // color: $c-text-black;
+      // width: 80px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      // flex-wrap: wrap;
+    }
+  }
+
+  .room-img {
+    /* position: relative; */
+    border-radius: 5px;
+    width: auto;
+    // max-width: 150px;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .TinySquareIcon {
+    width: 24px;
+    height: auto;
+    border-radius: 3px;
+  }
+}

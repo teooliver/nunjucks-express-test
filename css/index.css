@@ -1,0 +1,89 @@
+.RoomCard {
+  margin: 1rem 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+}
+
+.RoomCard .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.RoomCard .left {
+  height: inherit;
+  margin-right: 1rem;
+}
+
+.RoomCard .right {
+  margin: 0 1rem;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.RoomCard .price {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.RoomCard .color-choices h3 {
+  margin: 1rem 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.RoomCard .color-choices .text {
+  margin-right: 1rem;
+}
+
+.RoomCard .color-choices .text .wall-area {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.RoomCard .color-choices .text .color-name {
+  font-size: 0.8rem;
+}
+
+.RoomCard .color-choices .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.RoomCard .room-img {
+  /* position: relative; */
+  border-radius: 5px;
+  width: auto;
+  max-height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.RoomCard .TinySquareIcon {
+  width: 24px;
+  height: auto;
+  border-radius: 3px;
+}
+/*# sourceMappingURL=index.css.map */

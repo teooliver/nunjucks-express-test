@@ -1,0 +1,50 @@
+{% extends "./layout.njk" %} {% block content %} {% for room in rooms %}
+<div class="RoomCard">
+  <div class="left">
+    <img
+      class="room-img"
+      src="https://source.unsplash.com/FBXuXp57eM0"
+      alt=""
+    />
+  </div>
+  <div class="right">
+    <p class="title">
+      <span>{{ room.label }}</span> <em>- {{ room.property }}</em>
+      <em>| {{ room.type }}</em>
+    </p>
+    <div class="color-choices">
+      <div class="colors">
+        <div class="text">
+          <p class="wall-area">Wall Area 1</p>
+          <p class="color-name">{{ room.wall1.colorName }}</p>
+        </div>
+        <svg
+          class="TinySquareIcon"
+          fill="{{ wall1.color }}"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="100" height="100" />
+        </svg>
+      </div>
+
+      <div class="colors">
+        <div class="text">
+          <p class="wall-area">Wall Area 2</p>
+          <p class="color-name">{{ room.wall2.colorName }}</p>
+        </div>
+
+        <svg
+          class="TinySquareIcon"
+          fill="{{ room.wall2.color }}"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="100" height="100" />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="price">Price: {{ room.price }}</div>
+</div>
+{% endfor %} {% endblock %}
